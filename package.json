@@ -1,0 +1,41 @@
+{
+  "name": "gdxviewer",
+  "displayName": "gdxviewer",
+  "description": "View and explore gdx files from gams.",
+  "version": "0.0.1",
+  "author": "Rupesh Singh",
+  "contributors": [
+      {
+          "name": "Rupesh Singh",
+          "email": "wrufesh@gmail.com",
+          "url": "https://github.com/Wrufesh"
+      }
+  ],
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "gdxViewer.openFile",
+      "title": "Open GAM's .gdx file"
+    }]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.96.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "eslint": "^9.16.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1"
+  }
+}
