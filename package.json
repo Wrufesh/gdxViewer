@@ -3,7 +3,7 @@
   "displayName": "gdxviewer",
   "description": "View and explore gdx files from gams.",
   "version": "0.0.1",
-  "author": "Rupesh Singh",
+  "author": "wrufesh",
   "contributors": [
       {
           "name": "Rupesh Singh",
@@ -11,6 +11,10 @@
           "url": "https://github.com/Wrufesh"
       }
   ],
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/Wrufesh/gdxViewer.git"
+  },
   "engines": {
     "vscode": "^1.96.0"
   },
@@ -28,7 +32,8 @@
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
-    "test": "vscode-test"
+    "test": "vscode-test",
+    "vscode:prepublish": "vsce package"
   },
   "devDependencies": {
     "@types/vscode": "^1.96.0",
@@ -36,6 +41,7 @@
     "@types/node": "20.x",
     "eslint": "^9.16.0",
     "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^2.4.1"
+    "@vscode/test-electron": "^2.4.1",
+    "vsce": "^2.5.0"
   }
 }
