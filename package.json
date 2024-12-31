@@ -16,7 +16,7 @@
       "url": "https://github.com/Wrufesh/gdxViewer.git"
   },
   "engines": {
-    "vscode": "^1.96.0"
+    "vscode": "^1.50.0"
   },
   "categories": [
     "Other"
